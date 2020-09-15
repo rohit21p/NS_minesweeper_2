@@ -47,6 +47,7 @@ function cellClicked(e) {
     score++;
     if (score === 71) {
       document.querySelector(".endscreen").classList.remove("hidden");
+      document.querySelector(".end-score").innerText = score;
       document.getElementById("gameMsg").innerText =
         "Congratulations you won the game";
       gamceOVer();
